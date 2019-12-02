@@ -29,6 +29,14 @@ namespace TestTddDemo
 		public void ThrowsWhenTooHot()
 		{
 			Temperature temp = new Temperature();
+			
+			// Alternative syntax:
+			//Assert.Throws<Exception>(() =>
+			//{
+			//	temp.CelsiusToFahrenheit(double.PositiveInfinity);
+			//}
+			//);
+
 			try
 			{
 				double neverUsed = temp.CelsiusToFahrenheit(double.PositiveInfinity);
