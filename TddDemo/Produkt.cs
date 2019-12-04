@@ -11,7 +11,7 @@ namespace TddDemo
 		 */
 	public class Produkt
 	{
-		private string namn;
+		public string namn;
 		private double prisExMoms;
 		public Produkt(string namn, double prisExMoms)
 		{
